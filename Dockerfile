@@ -1,5 +1,5 @@
-# Use an official PHP runtime as a parent image with Apache
-FROM php:8.0-apache
+# Use an official PHP runtime as a parent image with Apache and PHP 8.2
+FROM php:8.2-apache
 
 # Set working directory
 WORKDIR /var/www/html
@@ -40,4 +40,3 @@ EXPOSE 80
 
 # Start Apache server
 CMD ["apache2-foreground"]
-
